@@ -1,0 +1,42 @@
+/* Default styles for all screen sizes */
+nav ul {
+  @apply flex justify-around items-center;
+}
+
+nav ul .image-container img {
+  @apply w-16; /* Adjust the size based on your design */
+}
+
+nav ul .links-contaier .navlink {
+  @apply text-lg ml-2 mr-2 font-semibold text-gray-700;
+}
+
+nav ul .links-contaier .active {
+  @apply bg-yellow-400 px-4 py-2 rounded;
+}
+
+/* Responsive styles for medium (md) screens and larger */
+@media (min-width: 768px) {
+  nav ul .image-container img {
+    @apply w-24; /* Adjust the size based on your design */
+  }
+
+  nav ul .links-contaier .navlink {
+    @apply ml-4 mr-4;
+  }
+
+  nav ul .links-contaier .active {
+    @apply px-6 py-3;
+  }
+}
+
+/* Responsive styles for large (lg) screens and larger */
+@media (min-width: 1024px) {
+  nav ul .links-contaier .navlink {
+    @apply ml-6 mr-6;
+  }
+
+  nav ul .links-contaier .active {
+    @apply px-8 py-4;
+  }
+}

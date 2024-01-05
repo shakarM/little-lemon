@@ -1,0 +1,8 @@
+/* Center individual slides in the x-axis and vertically */
+.slick-slide > div {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: screen;
+}
